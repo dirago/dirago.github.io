@@ -1,7 +1,10 @@
 var responseUser = document.getElementById('responseUser');
 var display = document.getElementById('sentence');
 var pulse = display.classList.toggle('pulse');
-document.getElementById('btn').onclick = function() {
+function launch(event) {
+    return event.keyCode == 13 ? winOrLose() : false;
+}
+function winOrLose() {
     var submittedResponse = responseUser.value.toLowerCase();
     display.classList.toggle('pulse');
     if (submittedResponse === "blanc") {
@@ -17,4 +20,4 @@ document.getElementById('btn').onclick = function() {
             display.classList.toggle('pulse');
         }, 1000);
     }
-};
+}

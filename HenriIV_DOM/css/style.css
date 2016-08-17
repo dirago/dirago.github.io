@@ -44,3 +44,7 @@ section div#result {
 	align-items: center;
 	justify-content: center;
 }
+
+section div#result p#sentence {
+	color: green;
+}

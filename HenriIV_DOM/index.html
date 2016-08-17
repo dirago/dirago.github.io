@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Henri IV DOM</title>
@@ -12,8 +12,8 @@
         <section>
             <h1>Henri IV</h1>
             <p>Quelle est la couleur du cheval blanc d'Henri IV ?</p>
-            <input type="text" name="name" value="" id="responseUser" placeholder="Votre réponse">
-            <input type="submit" name="name" value="Envoyer" id="btn">
+            <input type="text" name="name" onkeyup="launch(event)" id="responseUser" placeholder="Votre réponse">
+            <input type="submit" name="name" value="Envoyer" id="btn" onclick="winOrLose()">
             <div id="result">
                 <p id="sentence" class="animated"></p>
             </div>
