@@ -32,6 +32,8 @@ var scoreUser = 0;
 var scoreOrdi = 0;
 
 document.getElementById('pierre').onclick = function() {
+    document.getElementById('ciseaux').onclick = function() {return false;}
+    document.getElementById('feuille').onclick = function() {return false;}
     genereItemIA();
     userChoice = this.id;
     elmt = this;
@@ -49,6 +51,7 @@ document.getElementById('pierre').onclick = function() {
 
 document.getElementById('feuille').onclick = function() {
     document.getElementById('ciseaux').onclick = function() {return false;}
+    document.getElementById('pierre').onclick = function() {return false;}
     genereItemIA();
     userChoice = this.id;
     elmt = this;
@@ -65,6 +68,8 @@ document.getElementById('feuille').onclick = function() {
 };
 
 document.getElementById('ciseaux').onclick = function() {
+    document.getElementById('feuille').onclick = function() {return false;}
+    document.getElementById('pierre').onclick = function() {return false;}
     genereItemIA();
     userChoice = this.id;
     elmt = this;
