@@ -32,8 +32,8 @@ var scoreUser = 0;
 var scoreOrdi = 0;
 
 document.getElementById('pierre').onclick = function() {
-    document.getElementById('ciseaux').onclick = function() {return false;}
-    document.getElementById('feuille').onclick = function() {return false;}
+    document.getElementById('ciseaux').classList.toggle("unclickable");
+    document.getElementById('feuille').classList.toggle("unclickable");
     genereItemIA();
     userChoice = this.id;
     elmt = this;
@@ -47,11 +47,13 @@ document.getElementById('pierre').onclick = function() {
     setTimeout(function() {hideActive(computerChoice);}, 5000);
     setTimeout(function() {clearClass(elmt);}, 5000);
     setTimeout(function() {showIAMiniature(computerChoice);}, 5000);
+        document.getElementById('ciseaux').classList.toggle("unclickable");
+        document.getElementById('feuille').classList.toggle("unclickable");
 };
 
 document.getElementById('feuille').onclick = function() {
-    document.getElementById('ciseaux').onclick = function() {return false;}
-    document.getElementById('pierre').onclick = function() {return false;}
+    document.getElementById('ciseaux').classList.toggle("unclickable");
+    document.getElementById('pierre').classList.toggle("unclickable");
     genereItemIA();
     userChoice = this.id;
     elmt = this;
@@ -65,11 +67,13 @@ document.getElementById('feuille').onclick = function() {
     setTimeout(function() {hideActive(computerChoice);}, 4000);
     setTimeout(function() {clearClass(elmt);}, 4000);
     setTimeout(function() {showIAMiniature(computerChoice);}, 4000);
+    document.getElementById('ciseaux').classList.toggle("unclickable");
+    document.getElementById('pierre').classList.toggle("unclickable");
 };
 
 document.getElementById('ciseaux').onclick = function() {
-    document.getElementById('feuille').onclick = function() {return false;}
-    document.getElementById('pierre').onclick = function() {return false;}
+    document.getElementById('feuille').classList.toggle("unclickable");
+    document.getElementById('pierre').classList.toggle("unclickable");
     genereItemIA();
     userChoice = this.id;
     elmt = this;
@@ -83,6 +87,8 @@ document.getElementById('ciseaux').onclick = function() {
     setTimeout(function() {hideActive(computerChoice);}, 5000);
     setTimeout(function() {clearClass(elmt);}, 5000);
     setTimeout(function() {showIAMiniature(computerChoice);}, 5000);
+        document.getElementById('feuille').classList.toggle("unclickable");
+        document.getElementById('pierre').classList.toggle("unclickable");
 };
 // fonctions DOM
 function showActive(c) {
@@ -149,7 +155,6 @@ function genereItemIA() {
     for (var i = 0; i < itemsIA.length; i++) {
         computerChoice = itemsIA[number];
     }
-    console.log("L'ordinateur a choisi : ", computerChoice);
 }
 
 function whoWin() {
