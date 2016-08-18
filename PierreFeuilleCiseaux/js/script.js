@@ -48,6 +48,7 @@ document.getElementById('pierre').onclick = function() {
 };
 
 document.getElementById('feuille').onclick = function() {
+    document.getElementById('ciseaux').onclick = function() {return: false;}
     genereItemIA();
     userChoice = this.id;
     elmt = this;
