@@ -1,0 +1,126 @@
+* {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height:100vh;
+    background-color: #f4e9d7;
+}
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e3cfae;
+    color: #6c6c6c;
+    text-align: center;
+    border-bottom: 5px solid #ecddc4;
+}
+#sub_header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 60px;
+}
+#show_you {
+    padding-left: 10%;
+}
+#show_ordi {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.show {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    line-height: 40px;
+    font-size: xx-large;
+    width: 150px;
+    text-align: center;
+    color: #e3cfae;
+}
+#bandeau_affichage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+#makeachoice {
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+}
+#pixUser {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+    height: 400px;
+}
+.selected {
+    visibility: hidden;
+}
+.active_left {
+    position: absolute;
+    left: 35%;
+    bottom: 0px;
+}
+.active_right {
+    position: absolute;
+    right: 35%;
+    bottom: 0px;
+}
+#cadre {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#score {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    border-bottom: 1px solid #a8a8a8;
+    color: #6c6c6c;
+    margin-top: 0;
+}
+#pixOrdi {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+    height: 400px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+footer img {
+    width: auto;
+    height: 240px;
+}
+#pierreUserActive {
+    display: none;
+}
+#feuilleUserActive {
+    display: none;
+}
+#ciseauxUserActive {
+    display: none;
+}
+#pierreOrdiActive {
+    display: none;
+}
+#feuilleOrdiActive {
+    display: none;
+}
+#ciseauxOrdiActive {
+    display: none;
+}
