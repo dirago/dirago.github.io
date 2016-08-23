@@ -1,2 +1,141 @@
 @import url(animate.css);
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import url(font-awesome-4.6.3/css/font-awesome.min.css);
+body {
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	height: 100vh;
+	padding-top: 110px;
+}
+
+.container {
+	width: 1180px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	height: 110px;
+	width: 100vw;
+	background-color: #FFF;
+	border-bottom: 1px solid #c84040;
+	box-sizing: border-box;
+	z-index: 9999;
+}
+
+header #header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+}
+
+header #header img {
+	height: 90px;
+	width: auto;
+	margin: 20px;
+}
+
+header #header a {
+	text-decoration: none;
+	color: black;
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+header #header #lang {
+	width: 160px;
+	height: 38px;
+	border: 1px solid #cdcdcd;
+	padding: 10px 12px 10px 20px;
+	background-color: #FFF;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 0.8em;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+header #header #lang img {
+	width: 18px;
+	height: 12px;
+	margin: 0 17px 0 0;
+}
+
+header #header #lang #selected-lang::after {
+	content: '\f107';
+	font-family: 'FontAwesome';
+	color: #cdcdcd;
+	float: right;
+	font-size: 1.3em;
+}
+
+header #header #lang #hidden-lang {
+	position: absolute;
+	width: 160px;
+	height: 38px;
+	border: 1px solid #cdcdcd;
+	padding: 10px 20px;
+	background-color: #FFF;
+	box-sizing: border-box;
+	top: 38px;
+	left: -1px;
+}
+
+nav {
+	position: fixed;
+	z-index: 9999;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 600px;
+	width: 60px;
+	box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+	border-right: 1px solid #c84040;
+	border-bottom: 1px solid #c84040;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav ul li {
+	margin-bottom: 30px;
+}
+
+nav ul img {
+	height: 48px;
+	margin: 0 auto;
+}
+
+div#slider {
+	z-index: 1;
+	overflow: hidden;
+	height: 600px;
+	border-bottom: 1px solid #c84040;
+	box-shadow: 1px 0px 8px #c84040;
+}
+
+div#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 15s slidy infinite;
+}
+
+div#slider figure img {
+	width: 20%;
+	height: 600px;
+	float: left;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
