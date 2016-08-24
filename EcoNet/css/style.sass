@@ -1,6 +1,13 @@
+// Animation
 @import 'animate.css'
-@import 'https://fonts.googleapis.com/css?family=Montserrat'
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lato:100|Raleway:100'
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons'
+// Glyphs
 @import 'font-awesome-4.6.3/css/font-awesome.min.css'
+// Variables
+$fa: 'FontAwesome'
+$rouge: #c84040
 
 body
     margin: auto
@@ -10,7 +17,7 @@ body
     padding-top: 110px
 
 .container
-    width: 1180px
+    width: 82%
 
 header
     display: flex
@@ -21,7 +28,7 @@ header
     height: 110px
     width: 100vw
     background-color: #FFF
-    border-bottom: 1px solid #c84040
+    border-bottom: 1px solid $rouge
     box-sizing: border-box
     z-index: 9999
 
@@ -36,6 +43,9 @@ header
             width: auto
             margin: 20px
 
+        p
+            font-family: 'Roboto', sans-serif
+            margin-top: auto
         a
             text-decoration: none
             color: black
@@ -53,6 +63,9 @@ header
             font-size: 0.8em
             cursor: pointer
             margin-right: 20px
+
+            &:focus
+                outline: 0
 
             img
                 width: 18px
@@ -79,34 +92,70 @@ header
                 top: 38px
                 left: -1px
 
+                &:hover
+                    background-color: #f0f0f0
+
 nav
     position: fixed
     z-index: 9999
-    background-color: rgba(255,255,255,0.8)
-    height: 600px
-    width: 60px
-    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26)
-    border-right: 1px solid #c84040
-    border-bottom: 1px solid #c84040
+    top: 175px
+    margin-left: 20px
 
     ul
         list-style: none
         padding-left: 0
 
+        a
+            text-decoration: none
+
         li
-            margin-bottom: 30px
+            margin-bottom: 20px
+            height: 53px
+            line-height: 53px
+            border-radius: 26px
+            padding-right: 15px
+            color: white
+
+            &:hover::before
+                background-color: $rouge
+                color: white
+
+            &::before
+                font-family: $fa
+                background-color: rgba(234, 234, 234, 0.7)
+                padding: 16px
+                border-radius: 27px
+                color: #636363
+                font-size: 1.3em
+
+        #li1::before, #li1e::before
+            content: '\f21e'
+
+        #li2::before, #li2e::before
+            content: '\f12e'
+
+        #li3::before, #li3e::before
+            content: '\f0c0'
+
+        #li4::before, #li4e::before
+            content: '\f03a'
+
+        #li5::before, #li5e::before
+            content: '\f06c'
+
+        .hoverLi
+            background-color: $rouge
 
         img
             height: 48px
             margin: 0 auto
-            // border: 1px solid #b7736e
 
 div#slider
     z-index: 1
     overflow: hidden
     height: 600px
-    border-bottom: 1px solid #c84040
-    box-shadow: 1px 0px 8px #c84040
+    border-bottom: 1px solid $rouge
+    box-shadow: 1px 0px 8px $rouge
 
     figure
         position: relative
@@ -123,5 +172,77 @@ div#slider
             float: left
 
 main
+    margin: auto
+    margin-top: 50px
+
+    article:nth-child(1)
+        border-top: 1px solid #cdcdcd
+        padding-top: 30px
+
+    article
+        text-align: center
+        margin-bottom: 100px
+
+        p
+            width: 76%
+            border: 1px solid #cdcdcd
+            margin: auto
+            padding: 30px
+            text-align: left
+
+footer
+    width: 100vw
+    height: 100px
+    background-color: rgba(115, 103, 103, 0.62)
+    border-top: 1px solid #312d2d
+    box-shadow: 0px 0px 24px #828282
+    margin-top: 50px
     display: flex
-    justify-content: center
+    flex-direction: row
+    box-sizing: border-box
+
+    div#signature
+        width: 20%
+        border-right: 1px solid #000
+        margin: 10px 0 10px 10px
+        font-family: 'Raleway', sans-serif
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        p, a
+            margin: 0 0 5px 0
+
+        div#links
+            display: flex
+            flex-direction: row
+
+            a, a:visited, a:active
+                text-decoration: none
+                color: #474646
+                margin: 0 8px 5px 8px
+
+            a:hover
+                color: #FFF
+
+            a:nth-child(3):hover
+                color: #1a85bc
+
+    div#infos
+        width: 80%
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        font-family: 'Raleway', sans-serif
+        margin: 0 0 0 10px
+
+        p#infoslegales
+            font-size: 0.9em
+            margin: auto
+
+        p#contact
+            border-left: 1px solid red
+            padding: 10px 10px 10px 20px
+            margin: 10px

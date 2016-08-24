@@ -9,22 +9,23 @@
         <header>
             <div id="header" class="container">
                 <img src="pix/logo.jpg" alt="logo econet" />
-                <a href="#">Nous contacter</a>
+                <p>L'exigence au service du nettoyage</p>
+                <a href="#">Demande de devis</a>
                 <div id="lang">
                     <div id="selected-lang"><img src="pix/fr.png" alt="drapeau français" />Français</div>
                     <a href="en">
-                        <div id="hidden-lang" style="display:none;"><img src="pix/en.png" alt="english flag" />English</div>
+                        <div id="hidden-lang" style="display:none;" onmouseout="disappear(this)"><img src="pix/en.png" alt="english flag" />English</div>
                     </a>
                 </div>
             </div>
         </header>
         <nav>
             <ul>
-                <li><img src="pix/png/work.png" alt="notre métier" /></li>
-                <li><img src="pix/png/offer.png" alt="l'offre econet" /></li>
-                <li><img src="pix/png/book.png" alt="nos clients" /></li>
-                <li><img src="pix/png/task.png" alt="nos missions" /></li>
-                <li><img src="pix/png/eco.png" alt="eco-responsable" /></li>
+                <li id="li1" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(681)"></li>
+                <li id="li2" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(968)"></li>
+                <li id="li3" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
+                <li id="li4" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
+                <li id="li5" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
             </ul>
         </nav>
         <div id="slider">
@@ -36,10 +37,68 @@
                 <img src="pix/slider/5.jpg" alt>
             </figure>
         </div>
-        <main>
-            <article class="container">
+        <main class="container">
+            <article>
+                <h1 id="anchor1">Notre Métier</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux de vie</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <h1 id="anchor2">L'offre Econet</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <h1 id="anchor3">Nos références</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <h1 id="anchor4">Nos missions</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <h1 id="anchor5">Eco-responsables</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
             </article>
         </main>
+        <footer>
+            <div id="signature">
+                <p><em>Designed by</em> DRg</p>
+                <div id="links">
+                    <a class="fa fa-at" href="mailto:?to=diragor@gmail.com &subject=Prise%20de%20contact &body=%0D%0A%0D%0AEmail%20envoyé%20via%20Econet"></a>
+                    <a target="_blank" href="http://www.raphaeldirago.com" class="fa fa-desktop"></a>
+                </div>
+            </div>
+            <div id="infos">
+                <p id="infoslegales">
+                    SAS ECO NET au capital de 7000€. Siège Social : 9 rue Honoré Daumier 34670 Baillargues <br>
+                    RCS Montpellier : 539 594 754 00019 / N° TVA Intracommunautaire : FR65539594754
+                </p>
+                <p id="contact">
+                    Romi DELLI <br>
+                    Responsable Clientèle <br>
+                    Tél : 06 14 66 04 36 / Fax : 04 67 16 29 89
+                </p>
+            </div>
+        </footer>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
