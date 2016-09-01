@@ -193,18 +193,17 @@ main
 footer
     width: 100vw
     height: 100px
-    background-color: rgba(115, 103, 103, 0.62)
-    border-top: 1px solid #312d2d
-    box-shadow: 0px 0px 24px #828282
+    border-top: 1px solid $rouge
+    box-shadow: 0px 0px 8px $rouge
     margin-top: 50px
     display: flex
     flex-direction: row
     box-sizing: border-box
 
     div#signature
-        width: 20%
-        border-right: 1px solid #000
-        margin: 10px 0 10px 10px
+        width: 12vw
+        border-right: 1px solid $rouge
+        margin: 10px
         font-family: 'Raleway', sans-serif
         display: flex
         flex-direction: column
@@ -220,14 +219,12 @@ footer
 
             a, a:visited, a:active
                 text-decoration: none
+                cursor: pointer
                 color: #474646
                 margin: 0 8px 5px 8px
 
             a:hover
-                color: #FFF
-
-            a:nth-child(3):hover
-                color: #1a85bc
+                color: $rouge
 
     div#infos
         width: 80%
@@ -243,6 +240,6 @@ footer
             margin: auto
 
         p#contact
-            border-left: 1px solid red
+            border-left: 1px solid $rouge
             padding: 10px 10px 10px 20px
             margin: 10px

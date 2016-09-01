@@ -218,9 +218,8 @@ main article p {
 footer {
 	width: 100vw;
 	height: 100px;
-	background-color: rgba(115, 103, 103, 0.62);
-	border-top: 1px solid #312d2d;
-	box-shadow: 0px 0px 24px #828282;
+	border-top: 1px solid #c84040;
+	box-shadow: 0px 0px 8px #c84040;
 	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
@@ -228,9 +227,9 @@ footer {
 }
 
 footer div#signature {
-	width: 20%;
-	border-right: 1px solid #000;
-	margin: 10px 0 10px 10px;
+	width: 12vw;
+	border-right: 1px solid #c84040;
+	margin: 10px;
 	font-family: 'Raleway', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -249,16 +248,13 @@ footer div#signature div#links {
 
 footer div#signature div#links a, footer div#signature div#links a:visited, footer div#signature div#links a:active {
 	text-decoration: none;
+	cursor: pointer;
 	color: #474646;
 	margin: 0 8px 5px 8px;
 }
 
 footer div#signature div#links a:hover {
-	color: #FFF;
-}
-
-footer div#signature div#links a:nth-child(3):hover {
-	color: #1a85bc;
+	color: #c84040;
 }
 
 footer div#infos {
@@ -277,7 +273,7 @@ footer div#infos p#infoslegales {
 }
 
 footer div#infos p#contact {
-	border-left: 1px solid red;
+	border-left: 1px solid #c84040;
 	padding: 10px 10px 10px 20px;
 	margin: 10px;
 }
