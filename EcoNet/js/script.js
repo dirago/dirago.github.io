@@ -43,3 +43,14 @@ function reduce(x) {
     x.classList.toggle('hoverLi');
     x.innerHTML = ""
 }
+
+// API Google maps
+
+function initialisation(){
+    var maCarte = new google.maps.Map( document.getElementById("map"), {
+		zoom: 10,
+		center: new google.maps.LatLng( 43.611741, 3.866949 ),
+        scrollwheel: false
+	});
+}
+google.maps.event.addDomListener(window, 'load', initialisation);
