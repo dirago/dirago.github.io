@@ -36,9 +36,9 @@ header #header {
 }
 
 header #header img {
-	height: 90px;
+	height: 90%;
 	width: auto;
-	margin: 20px;
+	margin: 2%;
 }
 
 header #header p {
