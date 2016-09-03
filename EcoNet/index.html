@@ -12,13 +12,27 @@
         <header>
             <div id="header" class="container">
                 <img src="pix/logo.jpg" alt="logo econet" />
-                <p>L'exigence au service du nettoyage</p>
-                <a href="#">Demande de devis</a>
+                <p class="slogan">L'exigence au service du nettoyage</p>
+                <a class="devis" href="#">Demande de devis</a>
                 <div id="lang">
-                    <div id="selected-lang"><img src="pix/fr.png" alt="drapeau français" />Français</div>
+                    <div id="selected-lang">
+                        <img class="flag" src="pix/fr.png" alt="drapeau français" />
+                        <span>Français</span>
+                    </div>
                     <a href="en/index.html">
-                        <div id="hidden-lang" style="display:none;" onmouseout="disappear(this)"><img src="pix/en.png" alt="english flag" />English</div>
+                        <div id="hidden-lang" style="display:none;">
+                            <img class="flag" src="pix/en.png" alt="english flag" />
+                            <span onmouseout="disappear()">English</span>
+                        </div>
                     </a>
+                </div>
+                <div id="lang-mob">
+                    <a href="index.html">FR</a>
+                    <p>/</p>
+                    <a href="en/index.html">EN</a>
+                </div>
+                <div id="nav-mob">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
         </header>
@@ -33,11 +47,11 @@
         </nav>
         <div id="slider">
             <figure>
-                <img src="pix/slider/1.jpg" alt>
-                <img src="pix/slider/2.jpg" alt>
-                <img src="pix/slider/3.jpg" alt>
-                <img src="pix/slider/4.jpg" alt>
-                <img src="pix/slider/5.jpg" alt>
+                <img class="sliderimg" src="pix/slider/1.jpg" alt>
+                <img class="sliderimg" src="pix/slider/2.jpg" alt>
+                <img class="sliderimg" src="pix/slider/3.jpg" alt>
+                <img class="sliderimg" src="pix/slider/4.jpg" alt>
+                <img class="sliderimg" src="pix/slider/5.jpg" alt>
             </figure>
         </div>
         <main class="container">

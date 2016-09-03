@@ -19,6 +19,10 @@ body
 .container
     width: 82%
 
+@media (max-width: 700px)
+    .container
+        width: 100%
+
 header
     display: flex
     align-items: center
@@ -43,15 +47,63 @@ header
             width: auto
             margin: 2%
 
-        p
+        p.slogan
             font-family: 'Roboto', sans-serif
             margin-top: auto
 
-        a
+        @media (max-width: 700px)
+            p.slogan
+                display: none
+
+        a.devis
             text-decoration: none
             color: black
             margin-left: auto
             margin-right: 50px
+
+        @media (max-width: 700px)
+            a.devis
+                display: none
+
+        #lang-mob
+            display: none
+
+        #nav-mob
+            display: none
+
+        @media (max-width: 700px)
+            #lang-mob
+                display: flex
+                flex-direction: row
+                position: absolute
+                top: 0
+                right: 25px
+                color: grey
+                width: 66px
+
+                a
+                    margin: auto
+                    text-decoration: none
+                    color: grey
+
+                a:nth-child(1)
+                    color: $rouge
+
+                p
+                    margin-left: 10%
+                    margin-right: 10%
+
+            #nav-mob
+                display: block
+                color: black
+                position: absolute
+                top: 47px
+                right: 38px
+
+                i
+                    height: 90%
+                    font-size: 3em
+                    color: grey
 
         #lang
             width: 160px
@@ -68,7 +120,7 @@ header
             &:focus
                 outline: 0
 
-            img
+            img.flag
                 width: 18px
                 height: 12px
                 margin: 0 17px 0 0
@@ -95,6 +147,10 @@ header
 
                 &:hover
                     background-color: #f0f0f0
+
+        @media (max-width: 700px)
+            #lang
+                display: none
 
 nav
     position: fixed
@@ -151,10 +207,14 @@ nav
             height: 48px
             margin: 0 auto
 
+@media (max-width: 700px)
+    nav
+        display: none
+
 div#slider
     z-index: 1
     overflow: hidden
-    height: 600px
+    height: 491px
     border-bottom: 1px solid $rouge
     box-shadow: 1px 0px 8px $rouge
 
@@ -167,10 +227,19 @@ div#slider
         font-size: 0
         animation: 15s slidy infinite
 
-        img
+        img.sliderimg
             width: 20%
-            height: 600px
+            height: 491px
             float: left
+
+@media (max-width: 700px)
+    div#slider
+        height: auto
+
+        figure
+
+            img.sliderimg
+                height: auto
 
 main
     margin: auto

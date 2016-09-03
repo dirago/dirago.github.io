@@ -165,4 +165,4 @@ function reduce(x) {
 //     });
 //     poly.setMap(map);
 // }
-google.maps.event.addDomListener(window, 'load', initialisation);
+// google.maps.event.addDomListener(window, 'load', initialisation);

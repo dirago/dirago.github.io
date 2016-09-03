@@ -14,6 +14,12 @@ body {
 	width: 82%;
 }
 
+@media (max-width: 700px) {
+	.container {
+		width: 100%;
+	}
+}
+
 header {
 	display: flex;
 	align-items: center;
@@ -41,16 +47,72 @@ header #header img {
 	margin: 2%;
 }
 
-header #header p {
+header #header p.slogan {
 	font-family: 'Roboto', sans-serif;
 	margin-top: auto;
 }
 
-header #header a {
+@media (max-width: 700px) {
+	header #header p.slogan {
+		display: none;
+	}
+}
+
+header #header a.devis {
 	text-decoration: none;
 	color: black;
 	margin-left: auto;
 	margin-right: 50px;
+}
+
+@media (max-width: 700px) {
+	header #header a.devis {
+		display: none;
+	}
+}
+
+header #header #lang-mob {
+	display: none;
+}
+
+header #header #nav-mob {
+	display: none;
+}
+
+@media (max-width: 700px) {
+	header #header #lang-mob {
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		color: grey;
+		width: 66px;
+	}
+	header #header #lang-mob a {
+		margin: auto;
+		text-decoration: none;
+		color: grey;
+	}
+	header #header #lang-mob a:nth-child(1) {
+		color: #c84040;
+	}
+	header #header #lang-mob p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	header #header #nav-mob {
+		display: block;
+		color: black;
+		position: absolute;
+		top: 47px;
+		right: 38px;
+	}
+	header #header #nav-mob i {
+		height: 90%;
+		font-size: 3em;
+		color: grey;
+	}
 }
 
 header #header #lang {
@@ -70,7 +132,7 @@ header #header #lang:focus {
 	outline: 0;
 }
 
-header #header #lang img {
+header #header #lang img.flag {
 	width: 18px;
 	height: 12px;
 	margin: 0 17px 0 0;
@@ -98,6 +160,12 @@ header #header #lang #hidden-lang {
 
 header #header #lang #hidden-lang:hover {
 	background-color: #f0f0f0;
+}
+
+@media (max-width: 700px) {
+	header #header #lang {
+		display: none;
+	}
 }
 
 nav {
@@ -168,10 +236,16 @@ nav ul img {
 	margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+	nav {
+		display: none;
+	}
+}
+
 div#slider {
 	z-index: 1;
 	overflow: hidden;
-	height: 600px;
+	height: 491px;
 	border-bottom: 1px solid #c84040;
 	box-shadow: 1px 0px 8px #c84040;
 }
@@ -186,10 +260,19 @@ div#slider figure {
 	animation: 15s slidy infinite;
 }
 
-div#slider figure img {
+div#slider figure img.sliderimg {
 	width: 20%;
-	height: 600px;
+	height: 491px;
 	float: left;
+}
+
+@media (max-width: 700px) {
+	div#slider {
+		height: auto;
+	}
+	div#slider figure img.sliderimg {
+		height: auto;
+	}
 }
 
 main {
