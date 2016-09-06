@@ -102,6 +102,7 @@ main
             width: 90px
             margin: 0 10px
             transform: skewX(0deg)
+            box-shadow: 17px 15px 2px #afafaf
 
     @media (max-width: 350px)
         .apercu
@@ -218,6 +219,10 @@ main
             display: flex
             flex-direction: row
             align-items: center
+
+        @media (max-width: 700px)
+            .comment-line
+                flex-wrap: wrap
 
         .comment-line > i
             margin-right: 1vw

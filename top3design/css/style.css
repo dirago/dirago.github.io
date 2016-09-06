@@ -117,6 +117,7 @@ main .apercu {
 		width: 90px;
 		margin: 0 10px;
 		transform: skewX(0deg);
+		box-shadow: 17px 15px 2px #afafaf;
 	}
 }
 
@@ -254,6 +255,12 @@ main .comment .comment-line {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+@media (max-width: 700px) {
+	main .comment .comment-line {
+		flex-wrap: wrap;
+	}
 }
 
 main .comment .comment-line > i {
