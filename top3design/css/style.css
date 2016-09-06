@@ -43,7 +43,7 @@ a {
 }
 
 .transition {
-	transition: all .5s ease;
+	transition: all 1s ease;
 }
 
 header {
@@ -287,6 +287,5 @@ main .comment .details > p {
 @media (max-width: 700px) {
 	main .comment .liked > p {
 		font-size: 0.8em;
-		flex-wrap: wrap-reverse;
 	}
 }
