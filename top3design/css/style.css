@@ -257,12 +257,6 @@ main .comment .comment-line {
 	align-items: center;
 }
 
-@media (max-width: 700px) {
-	main .comment .comment-line {
-		flex-wrap: wrap;
-	}
-}
-
 main .comment .comment-line > i {
 	margin-right: 1vw;
 }
@@ -282,4 +276,10 @@ main .comment .details {
 
 main .comment .details > p {
 	margin: 2vh 3vw;
+}
+
+@media (max-width: 700px) {
+	main .comment .liked > p {
+		flex-wrap: wrap;
+	}
 }
