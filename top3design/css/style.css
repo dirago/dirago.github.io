@@ -246,7 +246,7 @@ main .comment {
 }
 
 @media (max-width: 700px) {
-	main .comment .comment {
+	main .comment {
 		height: 60vh;
 	}
 }
