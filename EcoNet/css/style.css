@@ -65,6 +65,11 @@ header #header a.devis {
 	margin-right: 50px;
 }
 
+header #header a.devis:hover {
+	color: #c84040;
+	transition: color .5s ease;
+}
+
 @media (max-width: 700px) {
 	header #header a.devis {
 		display: none;
