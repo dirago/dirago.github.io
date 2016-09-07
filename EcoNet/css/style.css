@@ -10,6 +10,37 @@ body {
 	padding-top: 110px;
 }
 
+.back-top {
+	position: fixed;
+	bottom: 15vh;
+	right: 40px;
+	color: #c84040;
+	font-size: 3em;
+	transition: color .5s linear;
+	height: 48px;
+	width: 48px;
+	text-align: center;
+	line-height: 48px;
+	border-radius: 50%;
+	border: 1px solid;
+}
+
+.back-top:hover {
+	color: white;
+	background-color: #c84040;
+}
+
+.is-not-visible {
+	visibility: hidden;
+}
+
+.anchor {
+	display: block;
+	height: 110px;
+	margin-top: -110px;
+	visibility: hidden;
+}
+
 .container {
 	width: 82%;
 }
@@ -285,17 +316,21 @@ main {
 	margin-top: 50px;
 }
 
-main article:nth-child(1) {
+main .work {
 	border-top: 1px solid #cdcdcd;
 	padding-top: 30px;
 }
 
-main div#map {
+main .work .work-text {
+	margin-bottom: 40px;
+}
+
+main .work .work-map {
 	width: 100%;
 	height: auto;
 }
 
-main div#map img {
+main .work .work-map img {
 	width: 100%;
 	height: auto;
 	box-shadow: 0 0 26px #C1C1C1;

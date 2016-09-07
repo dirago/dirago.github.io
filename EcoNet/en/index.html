@@ -7,8 +7,12 @@
         <link rel="stylesheet" type="text/css" href="../css/style.min.css" media="screen">
         <link rel="shortcut icon" href="../pix/favicon.ico" type="image/x-icon">
 	    <link rel="icon" href="../pix/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     </head>
-    <body>
+    <body id="top">
+        <a href="#top" class="back-top is-not-visible">
+            <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+        </a>
         <header>
             <div id="header" class="container">
                 <img src="../pix/logo.jpg" alt="logo econet" />
@@ -38,11 +42,11 @@
         </header>
         <nav>
             <ul>
-                <li id="li1e" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(624)"></li>
-                <li id="li2e" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(894)"></li>
-                <li id="li3e" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
-                <li id="li4e" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
-                <li id="li5e" onmouseover="deploy(this)" onmouseout="reduce(this)" onclick="scrollAnchor(0)"></li>
+                <a href="#anchor1"><li id="li1e" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                <a href="#anchor2"><li id="li2e" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                <a href="#anchor3"><li id="li3e" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                <a href="#anchor4"><li id="li4e" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                <a href="#anchor5"><li id="li5e" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
             </ul>
         </nav>
         <div id="slider">
@@ -55,12 +59,51 @@
             </figure>
         </div>
         <main class="container">
+            <article class="work">
+                <div class="anchor" id="anchor1"></div>
+                <h1>Our job</h1>
+                <p class="work-text">At your service since 2012, Econet are cleaning your offices, buildings, shops and other living spaces. We handle all tasks related to it, empty the trash until the complete rehabilitation of your premises. At each of your needs, Econet will bring the
+                    better solution that will free the time you devote to this activity, which can be time consuming.
+                </p>
+                <div class="work-map">
+                    <img src="../pix/map.jpg" alt="map" />
+                </div>
+            </article>
             <article>
-                <h1 id="anchor1">Our job</h1>
-                <p>At your service since 2012, Econet are cleaning your offices, buildings, shops and other living spaces.
-                   We handle all tasks related to it, empty the trash until the complete rehabilitation of your premises.
-                   At each of your needs, Econet will bring the better solution that will free the time you devote to
-                   this activity, which can be time consuming.</p>
+                <div class="anchor" id="anchor2"></div>
+                <h1>L'offre Econet</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <div class="anchor" id="anchor3"></div>
+                <h1>Nos références</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <div class="anchor" id="anchor4"></div>
+                <h1>Nos missions</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
+            </article>
+            <article>
+                <div class="anchor" id="anchor5"></div>
+                <h1>Eco-responsables</h1>
+                <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                   Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                   A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                   qui peut s'avérer chronophage.
+                </p>
             </article>
         </main>
         <footer>
@@ -83,7 +126,7 @@
                 </p>
             </div>
         </footer>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIkP_a5T8ucjIyd5QoYmmubvnC3d1Kb0M"></script>
+        <script src="../js/nav.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>
     </body>
 </html>
