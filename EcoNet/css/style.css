@@ -30,6 +30,12 @@ body {
 	background-color: #c84040;
 }
 
+@media (max-width: 700px) {
+	.back-top {
+		display: none;
+	}
+}
+
 .is-not-visible {
 	visibility: hidden;
 }
