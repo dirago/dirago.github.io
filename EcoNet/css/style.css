@@ -135,6 +135,7 @@ header #header #nav-mob {
 		flex-direction: row;
 		position: absolute;
 		right: 105px;
+		top: 29px;
 		color: grey;
 		width: 66px;
 	}
@@ -152,6 +153,7 @@ header #header #nav-mob {
 	}
 	header #header .lang-mob--sm {
 		right: 75px !important;
+		top: 0 !important;
 	}
 	header #header #nav-mob {
 		display: block;
