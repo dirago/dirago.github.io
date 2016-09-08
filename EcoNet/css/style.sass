@@ -46,6 +46,9 @@ body
 .container
     width: 82%
 
+.header-sm
+    height: 50px
+
 @media (max-width: 700px)
     .container
         width: 100%
@@ -67,7 +70,7 @@ header
         display: flex
         flex-direction: row
         align-items: center
-        height: 100px
+        height: 100%
 
         img
             height: 90%
@@ -107,8 +110,7 @@ header
                 display: flex
                 flex-direction: row
                 position: absolute
-                top: 0
-                right: 25px
+                right: 105px
                 color: grey
                 width: 66px
 
@@ -123,18 +125,25 @@ header
                 p
                     margin-left: 10%
                     margin-right: 10%
+            .lang-mob--sm
+                right: 75px !important
 
             #nav-mob
                 display: block
                 color: black
                 position: absolute
-                top: 47px
-                right: 38px
+                top: 26px
+                right: 33px
+                font-size: 3em
 
                 i
                     height: 90%
-                    font-size: 3em
                     color: grey
+
+            .nav-mob--sm
+                top: 5px !important
+                right: 20px !important
+                font-size: 2em !important
 
         #lang
             width: 160px
@@ -164,6 +173,8 @@ header
                 float: right
                 font-size: 1.3em
 
+            a, a:visited, a:focus, a:hover
+                color: black
 
             #hidden-lang
                 position: absolute

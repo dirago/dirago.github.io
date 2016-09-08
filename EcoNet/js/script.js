@@ -17,7 +17,7 @@ function deploy(x) {
     x.classList.toggle('hoverLi');
     if (document.documentElement.lang === "fr") {
         switch (x.id) {
-            case "li1": x.innerHTML = "Notre métier"; break;
+            case "li1": x.innerHTML = "Notre métier"; x.style.transition = "all .5s ease"; break;
             case "li2": x.innerHTML = "L'offre Econet"; break;
             case "li3": x.innerHTML = "Nos références"; break;
             case "li4": x.innerHTML = "Nos missions"; break;
