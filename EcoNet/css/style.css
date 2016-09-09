@@ -428,13 +428,15 @@ footer div#infos {
 	margin: 0 0 0 10px;
 }
 
-footer div#infos p#infoslegales {
+footer div#infos #infoslegales {
 	font-size: 0.9em;
 	margin: auto;
 }
 
-footer div#infos p#contact {
+footer div#infos #contact {
 	border-left: 1px solid #c84040;
 	padding: 10px 10px 10px 20px;
 	margin: 10px;
+	height: 100px;
+	box-sizing: border-box;
 }
