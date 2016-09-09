@@ -387,7 +387,7 @@ footer {
 	box-sizing: border-box;
 }
 
-footer div#signature {
+footer #signature {
 	width: 12vw;
 	border-right: 1px solid #c84040;
 	margin: 10px;
@@ -396,30 +396,31 @@ footer div#signature {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	display: none;
 }
 
-footer div#signature p, footer div#signature a {
+footer #signature p, footer #signature a {
 	margin: 0 0 5px 0;
 }
 
-footer div#signature div#links {
+footer #signature #links {
 	display: flex;
 	flex-direction: row;
 }
 
-footer div#signature div#links a, footer div#signature div#links a:visited, footer div#signature div#links a:active {
+footer #signature #links a, footer #signature #links a:visited, footer #signature #links a:active {
 	text-decoration: none;
 	cursor: pointer;
 	color: #474646;
 	margin: 0 8px 5px 8px;
 }
 
-footer div#signature div#links a:hover {
+footer #signature #links a:hover {
 	color: #c84040;
 }
 
-footer div#infos {
-	width: 80%;
+footer #infos {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -428,15 +429,17 @@ footer div#infos {
 	margin: 0 0 0 10px;
 }
 
-footer div#infos #infoslegales {
+footer #infos #infoslegales {
 	font-size: 0.9em;
 	margin: auto;
+	width: 70%;
+	text-align: center;
 }
 
-footer div#infos #contact {
+footer #infos #contact {
 	border-left: 1px solid #c84040;
-	padding: 10px 10px 10px 20px;
-	margin: 10px;
+	padding: 10px 30px;
 	height: 100px;
+	width: 30%;
 	box-sizing: border-box;
 }

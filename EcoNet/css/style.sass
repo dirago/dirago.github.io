@@ -334,7 +334,7 @@ footer
     flex-direction: row
     box-sizing: border-box
 
-    div#signature
+    #signature
         width: 12vw
         border-right: 1px solid $rouge
         margin: 10px
@@ -343,11 +343,12 @@ footer
         flex-direction: column
         align-items: center
         justify-content: center
+        display: none
 
         p, a
             margin: 0 0 5px 0
 
-        div#links
+        #links
             display: flex
             flex-direction: row
 
@@ -360,8 +361,8 @@ footer
             a:hover
                 color: $rouge
 
-    div#infos
-        width: 80%
+    #infos
+        width: 100%
         display: flex
         flex-direction: row
         align-items: center
@@ -372,10 +373,12 @@ footer
         #infoslegales
             font-size: 0.9em
             margin: auto
+            width: 70%
+            text-align: center
 
         #contact
             border-left: 1px solid $rouge
-            padding: 10px 10px 10px 20px
-            margin: 10px
+            padding: 10px 30px
             height: 100px
+            width: 30%
             box-sizing: border-box
