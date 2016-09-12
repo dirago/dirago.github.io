@@ -1,6 +1,7 @@
 @import url(animate.css);
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lato:100|Raleway:100';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url(fonts/Melbourne/style.css);
 @import url(font-awesome-4.6.3/css/font-awesome.min.css);
 body {
 	margin: auto;
@@ -31,12 +32,6 @@ body {
 	background-color: #c84040;
 }
 
-@media (max-width: 700px) {
-	.back-top {
-		display: none;
-	}
-}
-
 .is-not-visible {
 	visibility: hidden;
 }
@@ -55,15 +50,6 @@ body {
 .header-sm {
 	height: 50px;
 	background-color: rgba(255, 255, 255, 0.8) !important;
-}
-
-@media (max-width: 700px) {
-	.container {
-		width: 100%;
-	}
-	header {
-		background-color: rgba(255, 255, 255, 0.8) !important;
-	}
 }
 
 header {
@@ -98,12 +84,6 @@ header #header p.slogan {
 	margin-top: auto;
 }
 
-@media (max-width: 700px) {
-	header #header p.slogan {
-		display: none;
-	}
-}
-
 header #header a.devis {
 	text-decoration: none;
 	color: black;
@@ -116,63 +96,12 @@ header #header a.devis:hover {
 	transition: color .5s ease;
 }
 
-@media (max-width: 700px) {
-	header #header a.devis {
-		display: none;
-	}
-}
-
 header #header #lang-mob {
 	display: none;
 }
 
 header #header #nav-mob {
 	display: none;
-}
-
-@media (max-width: 700px) {
-	header #header #lang-mob {
-		display: flex;
-		flex-direction: row;
-		position: absolute;
-		right: 105px;
-		top: 29px;
-		color: grey;
-		width: 66px;
-	}
-	header #header #lang-mob a {
-		margin: auto;
-		text-decoration: none;
-		color: grey;
-	}
-	header #header #lang-mob a:nth-child(1) {
-		color: #c84040;
-	}
-	header #header #lang-mob p {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	header #header .lang-mob--sm {
-		right: 75px !important;
-		top: 0 !important;
-	}
-	header #header #nav-mob {
-		display: block;
-		color: black;
-		position: absolute;
-		top: 26px;
-		right: 33px;
-		font-size: 3em;
-	}
-	header #header #nav-mob i {
-		height: 90%;
-		color: grey;
-	}
-	header #header .nav-mob--sm {
-		top: 5px !important;
-		right: 20px !important;
-		font-size: 2em !important;
-	}
 }
 
 header #header #lang {
@@ -223,12 +152,6 @@ header #header #lang #hidden-lang {
 
 header #header #lang #hidden-lang:hover {
 	background-color: #f0f0f0;
-}
-
-@media (max-width: 700px) {
-	header #header #lang {
-		display: none;
-	}
 }
 
 nav {
@@ -299,12 +222,6 @@ nav ul img {
 	margin: 0 auto;
 }
 
-@media (max-width: 700px) {
-	nav {
-		display: none;
-	}
-}
-
 div#slider {
 	z-index: 1;
 	overflow: hidden;
@@ -327,15 +244,6 @@ div#slider figure img.sliderimg {
 	width: 20%;
 	height: 491px;
 	float: left;
-}
-
-@media (max-width: 700px) {
-	div#slider {
-		height: auto;
-	}
-	div#slider figure img.sliderimg {
-		height: auto;
-	}
 }
 
 main {
@@ -381,12 +289,21 @@ main section .work .work-map img {
 
 main .second-section {
 	background-color: #C62828;
-	box-shadow: 0 0 7px #C62828;
 	padding: 10px 0 30px 0;
 	color: white;
 }
 
 main .second-section p {
+	border: 1px solid #fff;
+}
+
+main .third-section {
+	background-color: #28c6a0;
+	padding: 10px 0 30px 0;
+	color: white;
+}
+
+main .third-section p {
 	border: 1px solid #fff;
 }
 
@@ -399,7 +316,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Melbourne', sans-serif;
 }
 
 footer #signature {
@@ -407,6 +324,7 @@ footer #signature {
 	border-right: 1px solid #c84040;
 	margin: auto;
 	text-align: center;
+	font-size: 0.8em;
 }
 
 footer #signature p, footer #signature a {
@@ -430,9 +348,8 @@ footer #infos {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Raleway', sans-serif;
 	margin: 0 0 0 10px;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 footer #infos #infoslegales {
@@ -447,13 +364,4 @@ footer #infos #contact {
 	text-align: center;
 	width: 30%;
 	box-sizing: border-box;
-}
-
-@media (max-width: 700px) {
-	footer #signature {
-		display: none;
-	}
-	footer #contact {
-		display: none;
-	}
 }

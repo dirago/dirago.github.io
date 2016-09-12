@@ -3,6 +3,7 @@
 // Fonts
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lato:100|Raleway:100'
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons'
+@import 'fonts/Melbourne/style.css'
 // Glyphs
 @import 'font-awesome-4.6.3/css/font-awesome.min.css'
 // Variables
@@ -16,6 +17,7 @@ body
     height: 100vh
     padding-top: 110px
 
+// bouton de retour vers le haut
 .back-top
     position: fixed
     bottom: 15vh
@@ -35,32 +37,24 @@ body
         color: white
         background-color: $rouge
 
-@media (max-width: 700px)
-    .back-top
-        display: none
-
 .is-not-visible
     visibility: hidden
 
+// sert de "hack" pour le smooth scroll
 .anchor
     display: block
     height: 50px
     margin-top: -50px
     visibility: hidden
 
+// width du contenu central
 .container
     width: 82%
 
+// header resized au scroll
 .header-sm
     height: 50px
     background-color: rgba(255, 255, 255, 0.8) !important
-
-@media (max-width: 700px)
-    .container
-        width: 100%
-
-    header
-        background-color: rgba(255, 255, 255, 0.8) !important
 
 header
     display: flex
@@ -90,10 +84,7 @@ header
             font-family: 'Roboto', sans-serif
             margin-top: auto
 
-        @media (max-width: 700px)
-            p.slogan
-                display: none
-
+        // bouton "contact"
         a.devis
             text-decoration: none
             color: black
@@ -104,57 +95,11 @@ header
                 color: $rouge
                 transition: color .5s ease
 
-        @media (max-width: 700px)
-            a.devis
-                display: none
-
         #lang-mob
             display: none
 
         #nav-mob
             display: none
-
-        @media (max-width: 700px)
-            #lang-mob
-                display: flex
-                flex-direction: row
-                position: absolute
-                right: 105px
-                top: 29px
-                color: grey
-                width: 66px
-
-                a
-                    margin: auto
-                    text-decoration: none
-                    color: grey
-
-                a:nth-child(1)
-                    color: $rouge
-
-                p
-                    margin-left: 10%
-                    margin-right: 10%
-            .lang-mob--sm
-                right: 75px !important
-                top: 0 !important
-
-            #nav-mob
-                display: block
-                color: black
-                position: absolute
-                top: 26px
-                right: 33px
-                font-size: 3em
-
-                i
-                    height: 90%
-                    color: grey
-
-            .nav-mob--sm
-                top: 5px !important
-                right: 20px !important
-                font-size: 2em !important
 
         #lang
             width: 160px
@@ -199,10 +144,6 @@ header
 
                 &:hover
                     background-color: #f0f0f0
-
-        @media (max-width: 700px)
-            #lang
-                display: none
 
 nav
     position: fixed
@@ -259,10 +200,6 @@ nav
             height: 48px
             margin: 0 auto
 
-@media (max-width: 700px)
-    nav
-        display: none
-
 div#slider
     z-index: 1
     overflow: hidden
@@ -283,15 +220,6 @@ div#slider
             width: 20%
             height: 491px
             float: left
-
-@media (max-width: 700px)
-    div#slider
-        height: auto
-
-        figure
-
-            img.sliderimg
-                height: auto
 
 main
     margin: auto
@@ -331,7 +259,14 @@ main
 
     .second-section
         background-color: #C62828
-        box-shadow: 0 0 7px #C62828
+        padding: 10px 0 30px 0
+        color: white
+
+        p
+            border: 1px solid #fff
+
+    .third-section
+        background-color: #28c6a0
         padding: 10px 0 30px 0
         color: white
 
@@ -347,13 +282,14 @@ footer
     display: flex
     flex-direction: row
     box-sizing: border-box
-    font-family: 'Raleway', sans-serif
+    font-family: 'Melbourne', sans-serif
 
     #signature
         width: 10%
         border-right: 1px solid $rouge
         margin: auto
         text-align: center
+        font-size: 0.8em
 
         p, a
             margin: 0 0 5px 0
@@ -375,9 +311,8 @@ footer
         flex-direction: row
         align-items: center
         justify-content: center
-        font-family: 'Raleway', sans-serif
         margin: 0 0 0 10px
-        font-size: 0.9em
+        font-size: 1em
 
         #infoslegales
             font-size: 0.9em
@@ -390,10 +325,3 @@ footer
             text-align: center
             width: 30%
             box-sizing: border-box
-
-    @media (max-width: 700px)
-        #signature
-            display: none
-
-        #contact
-            display: none
