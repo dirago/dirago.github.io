@@ -26,12 +26,18 @@ $(document).ready(function() {
     });
     navMobIcon.on('click', function() {
         body.scrollTop(0)
-        wrapper.css('overflow','hidden');
+        header.hide()
+        wrapper.css({
+            overflow: 'hidden'
+        });
         navMob.css('display','flex');
     });
     navMobLink.on('click', function() {
-        wrapper.css('overflow','visible');
+        wrapper.css({
+            overflow: 'visible'
+        });
         navMob.hide();
+        header.show();
     })
 });
 
