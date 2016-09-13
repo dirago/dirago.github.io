@@ -25,7 +25,6 @@ $(document).ready(function() {
         });
     });
     navMobIcon.on('click', function() {
-        body.scrollTop(0)
         header.hide();
         // wrapper.css({
         //     overflow: 'hidden'
