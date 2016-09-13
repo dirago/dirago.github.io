@@ -17,144 +17,146 @@
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     </head>
     <body id="top">
-        <a href="#top" class="back-top is-not-visible">
-            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-        </a>
-        <div class="nav-mob">
-            <a href="#anchor1" class="nav-mob--link">Notre métier</a>
-            <a href="#anchor2" class="nav-mob--link">L'offre Econet</a>
-            <a href="#anchor3" class="nav-mob--link">Nos références</a>
-            <a href="#anchor4" class="nav-mob--link">Nos missions</a>
-            <a href="#anchor5" class="nav-mob--link">Eco-responsables</a>
-        </div>
-        <header>
-            <div id="header" class="container">
-                <img src="pix/logo.png" alt="logo econet" />
-                <p class="slogan">L'exigence au service du nettoyage</p>
-                <a class="devis" href="#">Contact</a>
-                <div id="lang">
-                    <div id="selected-lang">
-                        <img class="flag" src="pix/fr.png" alt="drapeau français" />
-                        <span>Français</span>
-                    </div>
-                    <a href="en/index.html">
-                        <div id="hidden-lang" style="display:none;">
-                            <img class="flag" src="pix/en.png" alt="english flag" />
-                            <span onmouseout="disappear()">English</span>
+        <div id="wrapper">
+            <a href="#top" class="back-top is-not-visible">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </a>
+            <div class="nav-mob">
+                <a href="#anchor1" class="nav-mob--link">Notre métier</a>
+                <a href="#anchor2" class="nav-mob--link">L'offre Econet</a>
+                <a href="#anchor3" class="nav-mob--link">Nos références</a>
+                <a href="#anchor4" class="nav-mob--link">Nos missions</a>
+                <a href="#anchor5" class="nav-mob--link">Eco-responsables</a>
+            </div>
+            <header>
+                <div id="header" class="container">
+                    <img src="pix/logo.png" alt="logo econet" />
+                    <p class="slogan">L'exigence au service du nettoyage</p>
+                    <a class="devis" href="#">Contact</a>
+                    <div id="lang">
+                        <div id="selected-lang">
+                            <img class="flag" src="pix/fr.png" alt="drapeau français" />
+                            <span>Français</span>
                         </div>
-                    </a>
-                </div>
-                <div id="lang-mob">
-                    <a href="index.html">FR</a>
-                    <p>/</p>
-                    <a href="en/index.html">EN</a>
-                </div>
-                <div class="nav-mob--icon">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <a href="#anchor1"><li id="li1" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
-                <a href="#anchor2"><li id="li2" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
-                <a href="#anchor3"><li id="li3" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
-                <a href="#anchor4"><li id="li4" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
-                <a href="#anchor5"><li id="li5" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
-            </ul>
-        </nav>
-        <div id="slider">
-            <figure>
-                <img class="sliderimg" src="pix/slider/1.jpg" alt>
-                <img class="sliderimg" src="pix/slider/2.jpg" alt>
-                <img class="sliderimg" src="pix/slider/3.jpg" alt>
-                <img class="sliderimg" src="pix/slider/4.jpg" alt>
-                <img class="sliderimg" src="pix/slider/5.jpg" alt>
-            </figure>
-        </div>
-        <main>
-            <section>
-                <article class="container work">
-                    <div class="anchor" id="anchor1"></div>
-                    <h1>Notre Métier</h1>
-                    <p class="work-text">A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux de vie</b>.
-                       Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
-                       A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
-                       qui peut s'avérer chronophage.
-                    </p>
-                    <div class="work-map">
-                        <img src="pix/map.jpg" alt="map" />
+                        <a href="en/index.html">
+                            <div id="hidden-lang" style="display:none;">
+                                <img class="flag" src="pix/en.png" alt="english flag" />
+                                <span onmouseout="disappear()">English</span>
+                            </div>
+                        </a>
                     </div>
-                </article>
-            </section>
-            <div class="anchor" id="anchor2"></div>
-            <section class="second-section">
-                <article class="container">
-                    <h1>L'offre Econet</h1>
-                    <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
-                       Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
-                       A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
-                       qui peut s'avérer chronophage.
-                    </p>
-                </article>
-            </section>
-            <div class="anchor" id="anchor3"></div>
-            <section class="third-section">
-                <article class="container">
-                    <h1>Ils nous font confiance</h1>
-                    <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
-                       Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
-                       A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
-                       qui peut s'avérer chronophage.
-                    </p>
-                </article>
-            </section>
-            <section>
-                <article class="container">
-                    <div class="anchor" id="anchor4"></div>
-                    <h1>Nos missions</h1>
-                    <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
-                       Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
-                       A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
-                       qui peut s'avérer chronophage.
-                    </p>
-                </article>
-            </section>
-            <section>
-                <article class="container">
-                    <div class="anchor" id="anchor5"></div>
-                    <h1>Eco-responsables</h1>
-                    <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
-                       Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
-                       A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
-                       qui peut s'avérer chronophage.
-                    </p>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <div id="signature">
-                <p>PROPULSED BY DRG</p>
-                <div id="links">
-                    <a target="_blank" href="http://www.raphaeldirago.com" class="fa fa-desktop"></a>
+                    <div id="lang-mob">
+                        <a href="index.html">FR</a>
+                        <p>/</p>
+                        <a href="en/index.html">EN</a>
+                    </div>
+                    <div class="nav-mob--icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
                 </div>
+            </header>
+            <nav>
+                <ul>
+                    <a href="#anchor1"><li id="li1" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                    <a href="#anchor2"><li id="li2" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                    <a href="#anchor3"><li id="li3" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                    <a href="#anchor4"><li id="li4" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                    <a href="#anchor5"><li id="li5" onmouseover="deploy(this)" onmouseout="reduce(this)"></li></a>
+                </ul>
+            </nav>
+            <div id="slider">
+                <figure>
+                    <img class="sliderimg" src="pix/slider/1.jpg" alt>
+                    <img class="sliderimg" src="pix/slider/2.jpg" alt>
+                    <img class="sliderimg" src="pix/slider/3.jpg" alt>
+                    <img class="sliderimg" src="pix/slider/4.jpg" alt>
+                    <img class="sliderimg" src="pix/slider/5.jpg" alt>
+                </figure>
             </div>
-            <div id="infos">
-                <p id="infoslegales">
-                    SAS ECO NET au capital de 7000€. Siège Social : 9 rue Honoré Daumier 34670 Baillargues <br>
-                    RCS Montpellier : 539 594 754 00019 / N° TVA Intracommunautaire : FR65539594754
-                </p>
-                <p id="contact">
-                    Romi DELLI
-                    <br>
-                    Responsable Clientèle
-                    <br>
-                    Tél : 06 14 66 04 36
-                    <br>
-                    Fax : 04 67 16 29 89
-                </p>
-            </div>
-        </footer>
+            <main>
+                <section>
+                    <article class="container work">
+                        <div class="anchor" id="anchor1"></div>
+                        <h1>Notre Métier</h1>
+                        <p class="work-text">A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux de vie</b>.
+                           Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                           A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                           qui peut s'avérer chronophage.
+                        </p>
+                        <div class="work-map">
+                            <img src="pix/map.jpg" alt="map" />
+                        </div>
+                    </article>
+                </section>
+                <div class="anchor" id="anchor2"></div>
+                <section class="second-section">
+                    <article class="container">
+                        <h1>L'offre Econet</h1>
+                        <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                           Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                           A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                           qui peut s'avérer chronophage.
+                        </p>
+                    </article>
+                </section>
+                <div class="anchor" id="anchor3"></div>
+                <section class="third-section">
+                    <article class="container">
+                        <h1>Ils nous font confiance</h1>
+                        <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                           Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                           A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                           qui peut s'avérer chronophage.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article class="container">
+                        <div class="anchor" id="anchor4"></div>
+                        <h1>Nos missions</h1>
+                        <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                           Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                           A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                           qui peut s'avérer chronophage.
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article class="container">
+                        <div class="anchor" id="anchor5"></div>
+                        <h1>Eco-responsables</h1>
+                        <p>A votre service depuis 2012, Econet se charge du <b>nettoyage de vos bureaux, immeubles, commerces et autres lieux</b>.
+                           Nous nous chargeons de toutes les tâches liées à celui-ci, du vidage de corbeille à la remise en état complète de vos locaux.
+                           A chacun de vos besoins, Econet saura apporter la solution adéquate qui libérera le temps que vous consacriez à cette activité
+                           qui peut s'avérer chronophage.
+                        </p>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <div id="signature">
+                    <p>PROPULSED BY DRG</p>
+                    <div id="links">
+                        <a target="_blank" href="http://www.raphaeldirago.com" class="fa fa-desktop"></a>
+                    </div>
+                </div>
+                <div id="infos">
+                    <p id="infoslegales">
+                        SAS ECO NET au capital de 7000€. Siège Social : 9 rue Honoré Daumier 34670 Baillargues <br>
+                        RCS Montpellier : 539 594 754 00019 / N° TVA Intracommunautaire : FR65539594754
+                    </p>
+                    <p id="contact">
+                        Romi DELLI
+                        <br>
+                        Responsable Clientèle
+                        <br>
+                        Tél : 06 14 66 04 36
+                        <br>
+                        Fax : 04 67 16 29 89
+                    </p>
+                </div>
+            </footer>
+        </div>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/nav.js"></script>
         <script type="text/javascript" src="js/scroll.js"></script>

@@ -7,6 +7,7 @@ $(document).ready(function() {
     var footer = $('footer');
     var slider = $('#slider');
     var body = $('body');
+    var wrapper = $('#wrapper');
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();
         var target = this.hash;
@@ -25,11 +26,11 @@ $(document).ready(function() {
     });
     navMobIcon.on('click', function() {
         body.scrollTop(0)
-        body.css('overflow','hidden');
+        wrapper.css('overflow','hidden');
         navMob.css('display','flex');
     });
     navMobLink.on('click', function() {
-        body.css('overflow','visible');
+        wrapper.css('overflow','visible');
         navMob.hide();
     })
 });
