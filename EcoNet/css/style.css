@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(animate.css);
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lato:100|Raleway:100';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
@@ -11,6 +12,12 @@ body {
 	padding-top: 110px;
 }
 
+/* menu déplié sous mobile */
+.nav-mob {
+	display: none;
+}
+
+/* bouton de retour vers le haut */
 .back-top {
 	position: fixed;
 	bottom: 15vh;
@@ -36,6 +43,7 @@ body {
 	visibility: hidden;
 }
 
+/* sert de "hack" pour le smooth scroll */
 .anchor {
 	display: block;
 	height: 50px;
@@ -48,8 +56,7 @@ body {
 }
 
 .header-sm {
-	height: 50px;
-	background-color: rgba(255, 255, 255, 0.8) !important;
+	height: 51px;
 }
 
 header {
@@ -60,8 +67,7 @@ header {
 	top: 0;
 	height: 110px;
 	width: 100vw;
-	background-color: #FFF;
-	border-bottom: 1px solid #c84040;
+	background-color: white;
 	box-sizing: border-box;
 	z-index: 9999;
 }
@@ -100,7 +106,7 @@ header #header #lang-mob {
 	display: none;
 }
 
-header #header #nav-mob {
+header #header .nav-mob--icon {
 	display: none;
 }
 

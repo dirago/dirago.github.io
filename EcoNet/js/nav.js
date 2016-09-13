@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    var navMobIcon = $('.nav-mob--icon');
+    var navMobLink = $('.nav-mob--link')
+    var navMob = $('.nav-mob');
+    var header = $('header');
+    var main = $('main');
+    var footer = $('footer');
+    var slider = $('#slider');
+    var body = $('body');
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();
         var target = this.hash;
@@ -15,20 +23,16 @@ $(document).ready(function() {
             //window.location.hash = target;
         });
     });
+    navMobIcon.on('click', function() {
+        body.scrollTop(0)
+        body.css('overflow','hidden');
+        navMob.css('display','flex');
+    });
+    navMobLink.on('click', function() {
+        body.css('overflow','visible');
+        navMob.hide();
+    })
 });
 
 
 // script pour un effet smooth sur le scroll to anchor
-
-
-$(window).on('scroll', function() {
-    var body = $('body'),
-        nav = $('nav'),
-        nav_height = nav.outerHeight(),
-        cur_pos = $(this).scrollTop();
-    if (cur_pos >= nav_height) {
-        body.find('.back-top').removeClass('is-not-visible');
-    } else {
-        body.find('.back-top').addClass('is-not-visible');
-    }
-});

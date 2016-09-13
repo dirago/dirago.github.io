@@ -17,6 +17,23 @@ body
     height: 100vh
     padding-top: 110px
 
+// menu déplié sous mobile
+div.nav-mob
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    height: 100vh
+    width: 100vw
+    position: absolute
+    top: 0
+    left: 0
+    background-color: $rouge
+    color: white
+    z-index: 9999
+
+    p
+        margin: 0
 // bouton de retour vers le haut
 .back-top
     display: none
@@ -37,8 +54,7 @@ body
 
 // header resized au scroll
 .header-sm
-    height: 50px
-    background-color: rgba(255, 255, 255, 0.8) !important
+    height: 51px
 
 header
     display: flex
@@ -49,9 +65,9 @@ header
     height: 110px
     width: 100vw
     background-color: rgba(255, 255, 255, 0.8)
-    border-bottom: 1px solid $rouge
+    // border-bottom: 1px solid $rouge
     box-sizing: border-box
-    z-index: 9999
+    z-index: 9998
 
     #header
         display: flex
@@ -95,7 +111,7 @@ header
             right: 75px !important
             top: 0 !important
 
-        #nav-mob
+        .nav-mob--icon
             display: block
             color: black
             position: absolute
@@ -107,10 +123,10 @@ header
                 height: 90%
                 color: grey
 
-        .nav-mob--sm
-            top: 5px !important
-            right: 20px !important
-            font-size: 2em !important
+        .nav-mob--icon--sm
+            top: 5px
+            right: 20px
+            font-size: 2em
 
         #lang
             display: none

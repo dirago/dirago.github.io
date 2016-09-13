@@ -17,7 +17,12 @@ body
     height: 100vh
     padding-top: 110px
 
-// bouton de retour vers le haut
+/* menu déplié sous mobile */
+.nav-mob
+    display: none
+
+
+/* bouton de retour vers le haut */
 .back-top
     position: fixed
     bottom: 15vh
@@ -40,7 +45,7 @@ body
 .is-not-visible
     visibility: hidden
 
-// sert de "hack" pour le smooth scroll
+/* sert de "hack" pour le smooth scroll */
 .anchor
     display: block
     height: 50px
@@ -53,8 +58,7 @@ body
 
 // header resized au scroll
 .header-sm
-    height: 50px
-    background-color: rgba(255, 255, 255, 0.8) !important
+    height: 51px
 
 header
     display: flex
@@ -64,8 +68,8 @@ header
     top: 0
     height: 110px
     width: 100vw
-    background-color: #FFF
-    border-bottom: 1px solid $rouge
+    background-color: rgba(255, 255, 255, 1)
+    // border-bottom: 1px solid $rouge
     box-sizing: border-box
     z-index: 9999
 
@@ -98,7 +102,7 @@ header
         #lang-mob
             display: none
 
-        #nav-mob
+        .nav-mob--icon
             display: none
 
         #lang
