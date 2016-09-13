@@ -27,16 +27,16 @@ $(document).ready(function() {
     navMobIcon.on('click', function() {
         body.scrollTop(0)
         header.hide();
-        wrapper.css({
-            overflow: 'hidden'
-        });
+        // wrapper.css({
+        //     overflow: 'hidden'
+        // });
         navMob.css('display','flex');
     });
     navMobLink.on('click', function() {
         console.log(this.hash);
-        wrapper.css({
-            overflow: 'visible'
-        });
+        // wrapper.css({
+        //     overflow: 'visible'
+        // });
         navMob.hide();
         header.show();
     })
