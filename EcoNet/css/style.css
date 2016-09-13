@@ -236,7 +236,7 @@ nav ul img {
 div#slider {
 	z-index: 1;
 	overflow: hidden;
-	height: 491px;
+	height: auto;
 	border-bottom: 1px solid #c84040;
 	box-shadow: 1px 0px 8px #c84040;
 }
@@ -253,7 +253,7 @@ div#slider figure {
 
 div#slider figure img.sliderimg {
 	width: 20%;
-	height: 491px;
+	height: auto;
 	float: left;
 }
 
