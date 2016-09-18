@@ -61,6 +61,8 @@ div.nav-mob
 .container
     width: 100%
 
+/* ---------------------- HEADER ---------------------- */
+
 // header resized au scroll
 .header-sm
     height: 51px
@@ -96,7 +98,7 @@ header
         a.devis
             display: none
 
-        #lang-mob
+        .lang-mob
             display: flex
             flex-direction: row
             position: absolute
@@ -104,21 +106,38 @@ header
             top: 29px
             color: grey
             width: 66px
+            height: 1em
 
             a
                 margin: auto
                 text-decoration: none
                 color: grey
+                font-size: 0.9em
 
             a:nth-child(1)
                 color: $rouge
 
             p
-                margin-left: 10%
-                margin-right: 10%
+                margin: 0 10%
         .lang-mob--sm
-            right: 75px !important
-            top: 0 !important
+            right: 75px
+            top: 6px
+            font-size: 0.8em
+
+        .contact-mob
+            display: block
+            position: absolute
+            top: 63px
+            right: 98px
+
+            a, a:visited
+                text-decoration: none
+                color: grey
+
+        .contact-mob--sm
+            right: 80px
+            top: 28px
+            font-size: 0.7em
 
         .nav-mob--icon
             display: block
@@ -139,6 +158,8 @@ header
 
         #lang
             display: none
+
+/* ---------------------- NAVIGATION ---------------------- */
 
 nav
     display: none
@@ -216,6 +237,8 @@ main
         p
             border: 1px solid #fff
 
+/* ---------------------- FOOTER ---------------------- */
+
 footer
     width: 100vw
     height: 100px
@@ -247,3 +270,11 @@ footer
 
         #contact
             display: none
+
+/* ---------------------- CONTACT ---------------------- */
+
+.contact
+    width: 100vw
+
+    img
+        width: 100%

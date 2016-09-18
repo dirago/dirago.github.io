@@ -59,6 +59,7 @@ div.nav-mob a {
 	width: 100%;
 }
 
+/* ---------------------- HEADER ---------------------- */
 .header-sm {
 	height: 51px;
 }
@@ -98,7 +99,7 @@ header #header a.devis {
 	display: none;
 }
 
-header #header #lang-mob {
+header #header .lang-mob {
 	display: flex;
 	flex-direction: row;
 	position: absolute;
@@ -106,26 +107,46 @@ header #header #lang-mob {
 	top: 29px;
 	color: grey;
 	width: 66px;
+	height: 1em;
 }
 
-header #header #lang-mob a {
+header #header .lang-mob a {
 	margin: auto;
+	text-decoration: none;
+	color: grey;
+	font-size: 0.9em;
+}
+
+header #header .lang-mob a:nth-child(1) {
+	color: #c84040;
+}
+
+header #header .lang-mob p {
+	margin: 0 10%;
+}
+
+header #header .lang-mob--sm {
+	right: 75px;
+	top: 6px;
+	font-size: 0.8em;
+}
+
+header #header .contact-mob {
+	display: block;
+	position: absolute;
+	top: 63px;
+	right: 98px;
+}
+
+header #header .contact-mob a, header #header .contact-mob a:visited {
 	text-decoration: none;
 	color: grey;
 }
 
-header #header #lang-mob a:nth-child(1) {
-	color: #c84040;
-}
-
-header #header #lang-mob p {
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-header #header .lang-mob--sm {
-	right: 75px !important;
-	top: 0 !important;
+header #header .contact-mob--sm {
+	right: 80px;
+	top: 28px;
+	font-size: 0.7em;
 }
 
 header #header .nav-mob--icon {
@@ -152,6 +173,7 @@ header #header #lang {
 	display: none;
 }
 
+/* ---------------------- NAVIGATION ---------------------- */
 nav {
 	display: none;
 }
@@ -241,6 +263,7 @@ main .third-section p {
 	border: 1px solid #fff;
 }
 
+/* ---------------------- FOOTER ---------------------- */
 footer {
 	width: 100vw;
 	height: 100px;
@@ -276,4 +299,13 @@ footer #infos #infoslegales {
 
 footer #infos #contact {
 	display: none;
+}
+
+/* ---------------------- CONTACT ---------------------- */
+.contact {
+	width: 100vw;
+}
+
+.contact img {
+	width: 100%;
 }

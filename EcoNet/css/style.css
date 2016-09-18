@@ -59,6 +59,7 @@ div#wrapper {
 	width: 82%;
 }
 
+/* ---------------------- HEADER ---------------------- */
 .header-sm {
 	height: 51px;
 }
@@ -107,7 +108,11 @@ header #header a.devis:hover {
 	transition: color .5s ease;
 }
 
-header #header #lang-mob {
+header #header .lang-mob {
+	display: none;
+}
+
+header #header .contact-mob {
 	display: none;
 }
 
@@ -165,6 +170,7 @@ header #header #lang #hidden-lang:hover {
 	background-color: #f0f0f0;
 }
 
+/* ---------------------- NAVIGATION ---------------------- */
 nav {
 	position: fixed;
 	z-index: 9999;
@@ -233,6 +239,7 @@ nav ul img {
 	margin: 0 auto;
 }
 
+/* ---------------------- SLIDER ---------------------- */
 div#slider {
 	z-index: 1;
 	overflow: hidden;
@@ -257,6 +264,7 @@ div#slider figure img.sliderimg {
 	float: left;
 }
 
+/* ---------------------- CONTENU ---------------------- */
 main {
 	margin: auto;
 	margin-top: 50px;
@@ -318,6 +326,7 @@ main .third-section p {
 	border: 1px solid #fff;
 }
 
+/* ---------------------- FOOTER ---------------------- */
 footer {
 	width: 100vw;
 	height: 100px;
@@ -375,4 +384,83 @@ footer #infos #contact {
 	text-align: center;
 	width: 30%;
 	box-sizing: border-box;
+}
+
+/* ---------------------- CONTACT ---------------------- */
+.contact-main {
+	margin-top: 0;
+}
+
+.contact-main img {
+	width: 100%;
+}
+
+.contact-main .contact-content {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+
+.contact-main .contact-content .contact-informations {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-main .contact-content .contact-form {
+	width: 80%;
+}
+
+.contact-main .contact-content .contact-form #msgOk {
+	display: none;
+}
+
+.contact-main .contact-content .contact-form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-main .contact-content .contact-form form .form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.contact-main .contact-content .contact-form form .form-elt {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.contact-main .contact-content .contact-form form .form-elt p {
+	margin: 0;
+	border: none;
+	padding: 5px;
+	width: auto;
+	font-size: 0.9em;
+}
+
+.contact-main .contact-content .contact-form form .form-elt select, .contact-main .contact-content .contact-form form .form-elt input {
+	width: 100%;
+	height: 35px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+	outline: 0;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+
+.contact-main .contact-content .contact-form form .form-elt .message {
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+	outline: 0;
+	padding: 10px;
+}
+
+.contact-main .contact-content .contact-form form .form-elt .required {
+	font-size: 0.8em;
+	font-style: italic;
 }
