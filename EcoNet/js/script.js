@@ -18,7 +18,7 @@ function deploy(x) {
     if (document.documentElement.lang === "fr") {
         switch (x.id) {
             case "li1": x.innerHTML = "Notre métier"; break;
-            case "li2": x.innerHTML = "L'offre Econet"; break;
+            case "li2": x.innerHTML = "L'offre ECONET"; break;
             case "li3": x.innerHTML = "Nos références"; break;
             case "li4": x.innerHTML = "Nos missions"; break;
             case "li5": x.innerHTML = "Eco-responsables"; break;
@@ -27,7 +27,7 @@ function deploy(x) {
     } else {
         switch (x.id) {
             case "li1e": x.innerHTML = "Our job"; break;
-            case "li2e": x.innerHTML = "The Econet solution"; break;
+            case "li2e": x.innerHTML = "The ECONET solution"; break;
             case "li3e": x.innerHTML = "Our references"; break;
             case "li4e": x.innerHTML = "Our missions"; break;
             case "li5e": x.innerHTML = "Eco-friendly"; break;

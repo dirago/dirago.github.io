@@ -26,21 +26,18 @@ div#wrapper {
 	position: fixed;
 	bottom: 15vh;
 	right: 40px;
-	background-color: white;
 	color: #c84040;
 	font-size: 3em;
-	transition: color .5s linear;
+	transition: all .5s linear;
 	height: 48px;
 	width: 48px;
 	text-align: center;
 	line-height: 48px;
 	border-radius: 50%;
-	border: 1px solid;
 }
 
 .back-top:hover {
-	color: white;
-	background-color: #c84040;
+	color: #E89999;
 }
 
 .is-not-visible {
@@ -250,7 +247,7 @@ div#slider {
 
 div#slider figure {
 	position: relative;
-	width: 500%;
+	width: 300%;
 	margin: 0;
 	left: 0;
 	text-align: left;
@@ -259,7 +256,7 @@ div#slider figure {
 }
 
 div#slider figure img.sliderimg {
-	width: 20%;
+	width: 33.33333%;
 	height: auto;
 	float: left;
 }

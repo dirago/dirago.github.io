@@ -86,9 +86,9 @@ header #header {
 }
 
 header #header img {
-	height: 90%;
+	height: 60%;
 	width: auto;
-	margin: 2%;
+	margin: 0 0 0 5vw;
 }
 
 header #header p.slogan {
