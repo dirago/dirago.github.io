@@ -25,17 +25,19 @@ $(document).ready(function() {
         });
     });
     navMobIcon.on('click', function() {
-        header.hide();
-        // wrapper.css({
-        //     overflow: 'hidden'
-        // });
-        navMob.css('display','flex');
+        if (navMob.css('display') !== 'flex') {
+            navMob.css('display', 'flex')
+            wrapper.css({
+                overflow: 'hidden'
+            });
+        } else
+            navMob.css('display', 'none');
     });
     navMobLink.on('click', function() {
         console.log(this.hash);
-        // wrapper.css({
-        //     overflow: 'visible'
-        // });
+        wrapper.css({
+            overflow: 'visible'
+        });
         navMob.hide();
         header.show();
     })
